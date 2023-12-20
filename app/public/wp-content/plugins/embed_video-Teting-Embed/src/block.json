@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "jamaa-blocks/embed-video",
+	"version": "0.1.0",
+	"title": "Jamaa Embed Video",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Example block scaffolded with Create Block tool.",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"acf_field": {
+			"type": "string",
+			"default": "https://www.youtube.com/watch?v=7E4r16Oxjno"
+		}
+	},
+	"textdomain": "jamaa_embed_video",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

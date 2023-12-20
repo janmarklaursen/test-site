@@ -1,0 +1,199 @@
+/*
+ Theme Name:   GeneratePress Child
+ Theme URI:    https://generatepress.com
+ Description:  Default GeneratePress child theme
+ Author:       Tom Usborne
+ Author URI:   https://tomusborne.com
+ Template:     generatepress
+ Version:      0.1
+*/
+.carousel-outer{
+    overflow: hidden;
+}
+.carousel-inner{
+    display: block !important;
+        overflow: visible;
+        white-space: nowrap;
+}
+
+.carousel-inner > *{
+    display: inline-block;
+}
+/*
+
+var parentElement=document.querySelector(".mark");
+parentElement.classList.add("two");
+
+var parentElement=document.querySelector(".mark");
+parentElement.classList.remove("two");
+parentElement.appendChild(parentElement.firstElementChild);
+
+
+
+var parentElement=document.querySelector(".mark");
+parentElement.classList.add("two");
+parentElement.addEventListener('animationend', function (event) {
+        parentElement.appendChild(parentElement.firstElementChild);
+        alert("end");
+});
+
+
+
+
+
+// Code for Safari 3.1 to 6.0
+document.getElementById("myDIV").addEventListener("webkitTransitionEnd", myFunction);
+
+// Standard syntax
+document.getElementById("myDIV").addEventListener("transitionend", myFunction);
+
+
+
+
+//end result:
+
+var parentElement=document.querySelector(".carousel-inner");
+parentElement.addEventListener('animationiteration', jamaaRepeatFunction);
+
+function jamaaRepeatFunction() {
+    
+    parentElement.appendChild(parentElement.firstElementChild);
+    console.log('itteration');
+
+
+};
+
+
+
+//with queryselctor all
+
+var parentElement=document.querySelectorAll(".carousel-inner");
+
+for (let i=0; i < parentElement.length; i++) {
+    parentElement[i].addEventListener('animationiteration', jamaaRepeatFunction);
+
+    function jamaaRepeatFunction() {
+
+        parentElement[i].appendChild(parentElement[i].firstElementChild);
+        console.log(i);
+
+
+    }
+
+    ;
+}
+
+;
+
+
+
+
+//width add class ' looping'
+
+var parentElement=document.querySelectorAll(".carousel-inner");
+
+for (let i=0; i < parentElement.length; i++) {
+    parentElement[i].classList.add('looping');
+    parentElement[i].addEventListener('animationiteration', jamaaRepeatFunction);
+
+    function jamaaRepeatFunction() {
+
+        parentElement[i].appendChild(parentElement[i].firstElementChild);
+        console.log(i);
+
+
+    }
+
+    ;
+}
+
+;
+
+
+
+
+
+
+
+
+var parentElement=document.querySelectorAll(".carousel-inner");
+
+for (let i=0; i < parentElement.length; i++) {
+    parentElement[i].classList.add('looping');
+    parentElement[i].addEventListener('animationiteration', jamaaRepeatFunction);
+
+    function jamaaRepeatFunction() {
+
+        parentElement[i].appendChild(parentElement[i].firstElementChild);
+        console.log(i);
+
+
+    }
+
+    ;
+}
+
+;
+
+
+
+
+
+
+
+
+
+
+//transform and custom width taken in to acount
+
+var parentElement=document.querySelectorAll(".carousel-inner");
+console.log('star...');
+
+for (let i=0; i < parentElement.length; i++) {
+    console.log(i);
+    //let parent = document.querySelector('.carousel-inner');
+    //let parentLeft = parent.offsetLeft;
+    let child=parentElement[i].firstElementChild;
+    //let childLeft = child.offsetLeft;
+    let childWidth=child.offsetWidth;
+
+    parentElement[i].addEventListener('transitionend', jamaaRepeatFunction);
+
+    console.log("begin: " +childWidth);
+    parentElement[i].style.transition="transform "+childWidth/50+"s linear";
+    parentElement[i].style.transform="translateX(-"+childWidth+"px)";
+
+
+
+
+    function jamaaRepeatFunction() {
+
+        parentElement[i].style='';
+        parentElement[i].appendChild(parentElement[i].firstElementChild);
+
+        console.log("1st: " +childWidth);
+
+        child=parentElement[i].firstElementChild;
+        childWidth=child.offsetWidth;
+
+
+        parentElement[i].style.transition="transform "+childWidth/50+"s linear";
+        parentElement[i].style.transform="translateX(-"+childWidth+"px)";
+
+
+
+
+
+
+
+
+
+    }
+
+    ;
+
+
+
+}
+
+;
